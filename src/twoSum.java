@@ -9,4 +9,13 @@ public class twoSum {
         }
         throw new IllegalArgumentException("No Two Sum Solution");
     }
+
+    public static void main(String[] args) {
+        int[] testArray = {1, 3, 5, 7, 9};
+        twoSum tSum = new twoSum();
+        int[] returnedArray = tSum.twoSum(testArray, 8);
+        for(int i = 0; i < returnedArray.length; i++) {
+            System.out.println(testArray[returnedArray[i]] + " ");
+        }
+    }
 }
