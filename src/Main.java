@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
+        reverseInteger revInt = new reverseInteger();
+        int test = revInt.reverse(321);
+        System.out.println(test);
     }
 }
