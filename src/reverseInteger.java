@@ -1,3 +1,6 @@
+/*
+    return the reverse of a given integer. 321 -> 123
+ */
 public class reverseInteger {
     private int temp = 0;
     public int reverse(int x) {

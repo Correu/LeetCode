@@ -1,3 +1,6 @@
+/*
+    Returns the positions of the values that add to equal the wanted target value.
+ */
 public class twoSum {
     public int[] twoSum(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++) {
