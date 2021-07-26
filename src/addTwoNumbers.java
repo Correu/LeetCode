@@ -9,7 +9,8 @@ import java.util.List;
 public class addTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
+        ListNode blankNode = new ListNode(0);
+        ListNode x = l1, y = l2, curr = blankNode;
 
         return l1;
     }
