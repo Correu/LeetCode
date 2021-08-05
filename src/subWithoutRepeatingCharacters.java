@@ -2,25 +2,27 @@
     find the length of the longest substring without repeating characters
  */
 public class subWithoutRepeatingCharacters {
+    //parses through the length of the string
     public static int lengthOfLongestSubstring(String s) {
-        int charCount = 0;
-        String temp = "";
-        //if an empty string
-        if(s.length() == 0) {
-            return 0;
-        }
-        for (int i = 0; i < s.length() - 1; i++) {
-            temp += s.charAt(i);
-            String test = temp;
-            System.out.println(test);
-            if (!temp.contains(test)) {
-                charCount++;
+        System.out.println(s.length());
+        int count = 0;
+        String currSub = "";
+        for(int i = 0; i < s.length(); i++) {
+            String currChar = "" + s.charAt(i);
+            currSub = currSub + currChar;
+            System.out.println(currSub + " " + currChar);
+            if(currSub.contains(currChar)) {
+                count++;
             } else {
                 break;
             }
         }
+        return count;
+    }
 
-        return charCount;
+    //checks for repeat characters
+    public boolean checkRepeats(String s, int x, int y) {
+        return false;
     }
 
     public static void main(String[] args) {
