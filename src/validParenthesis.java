@@ -2,30 +2,25 @@ import java.util.Stack;
 
 public class validParenthesis {
     public static boolean validParenthesis(String s) {
-        Stack<String> paren = new Stack<>();
+        Stack<Character> paren = new Stack<>();
         for(int i = 0; i < s.length(); i++) {
-            System.out.println(String.valueOf(s.charAt(i)));
-            if(s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[')
-                paren.push(String.valueOf(s.charAt(i)));
-            else if(s.charAt(i) == ')' && paren.peek() == "(") {
-                System.out.println(paren.peek());
-                paren.pop();
-                return true;
+            char check = s.charAt(i);
+            if(check == '(' || check == '{' || check == '[') {
+                paren.push(check);
             }
-            else if(s.charAt(i) == ']' && paren.peek() == "[") {
-                System.out.println(paren.peek());
-                paren.pop();
-                return true;
-            }
-            else if(s.charAt(i) == '}' && paren.peek() == "{") {
-                System.out.println(paren.peek());
-                paren.pop();
-                return true;
-            }
-            else
+            else if(paren.empty())
                 return false;
+            else if(check == ')' && paren.pop() != '(') {
+                return false;
+            }
+            else if(check == ']' && paren.pop() != '[') {
+                return false;
+            }
+            else if(s.charAt(i) == '}' && paren.pop() != '{') {
+                return false;
+            }
         }
-        return true;
+        return paren.empty();
     }
 
     public static void main(String[] args) {
