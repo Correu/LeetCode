@@ -9,7 +9,7 @@ public class maxArea {
                     largest = height[j];
                 }
             }
-            int bestArea = largest *
+            //int bestArea = largest *
         }
         return 0;
     }

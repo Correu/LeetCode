@@ -1,4 +1,6 @@
-//implement pow(x, n) [x raised to the n power]
+/*
+    Problem 50
+ */
 public class Pow {
     public static double myPow(double x, int n) {
         return Math.pow(x, n);

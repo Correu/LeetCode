@@ -1,3 +1,6 @@
+/*
+    Problem 9
+ */
 public class palindromeNumber {
     public static boolean isPalindrome(int x) {
         int temp = x;

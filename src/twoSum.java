@@ -1,9 +1,5 @@
 /*
-    Returns the positions of the values that add to equal the wanted target value.
-
-    [1] start at the first position, adding the numbers following to it comparing it to the target value
-    [2] if no solution, move to the next position and repeat the process
-    [3] continue until a solution is found or throw an error that no solution was found.
+   Problem 1
  */
 public class twoSum {
     public int[] twoSum(int[] nums, int target) {

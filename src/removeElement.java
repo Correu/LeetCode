@@ -1,3 +1,6 @@
+/*
+    Problem 27
+ */
 public class removeElement {
     public static int removeElement(int[] nums, int val) {
         int count = 0;
