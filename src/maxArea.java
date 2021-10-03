@@ -1,5 +1,5 @@
 public class maxArea {
-    public static int maxArea(int[] height) {
+    public int maxArea(int[] height) {
         int largest = 0;
         int second = 0;
         for(int i = 0; i < height.length; i++) {
@@ -14,7 +14,7 @@ public class maxArea {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int[] one = {1, 1};
         int[] two = {4, 3, 2, 1, 4};
         int[] three = {1, 2, 1};

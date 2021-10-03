@@ -5,7 +5,7 @@ import java.util.List;
  */
 public class addTwoNumbers {
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyNode = new ListNode(0);
         ListNode s = l1, t = l2, curr = dummyNode;
         int carry = 0;
@@ -24,7 +24,7 @@ public class addTwoNumbers {
         return dummyNode.next;
     }
 
-    public static class ListNode {
+    public class ListNode {
         int val;
         ListNode next;
         ListNode() {}
@@ -32,7 +32,7 @@ public class addTwoNumbers {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         ListNode node1 = new ListNode(321);
         ListNode node2 = new ListNode(432);
         ListNode returnNode = addTwoNumbers(node1, node2);
