@@ -2,7 +2,7 @@
     Problem 9
  */
 public class palindromeNumber {
-    public boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int x) {
         int temp = x;
         int rev = 0;
         while(temp > 0) {
@@ -17,7 +17,7 @@ public class palindromeNumber {
         }
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         int one = 121;
         int no = 10;
         boolean result = isPalindrome(no);

@@ -6,7 +6,7 @@ import java.util.Map;
  */
 public class subWithoutRepeatingCharacters {
     //parses through the length of the string
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> word = new HashMap<>();
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -25,7 +25,7 @@ public class subWithoutRepeatingCharacters {
         return false;
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         String blank = "";
         String one = "abcabcbb";
         String two = "pwwkew";
