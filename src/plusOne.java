@@ -20,6 +20,7 @@ public class plusOne {
         int[] dig2 = {4, 3, 2, 1};
         int[] dig3 = {0};
         int[] dig4 = {1, 2, 9};
+        int[] dig5 = {9};
 
         plusOne(dig1);
         System.out.println();
@@ -28,5 +29,7 @@ public class plusOne {
         plusOne(dig3);
         System.out.println();
         plusOne(dig4);
+        System.out.println();
+        plusOne(dig5);
     }
 }
