@@ -3,16 +3,18 @@
  */
 public class plusOne {
     public static int[] plusOne(int[] digits) {
-        if(digits[digits.length-1] == 9) {
-            digits[digits.length-1] = 0;
-            digits[digits.length-2] = digits[digits.length-2] + 1;
-        } else {
-            digits[digits.length - 1] = digits[digits.length - 1] + 1;
+        int len = digits.length;
+        for(int i = len-1; i >= 0; i--) {
+            if(digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
         }
-        for(int i = 0; i < digits.length; i++) {
-            System.out.print(digits[i]);
-        }
-        return digits;
+            int[] fill = new int[len+1];
+            fill[0] = 1;
+
+        return fill;
     }
 
     public static void main(String[] args) {
@@ -21,15 +23,43 @@ public class plusOne {
         int[] dig3 = {0};
         int[] dig4 = {1, 2, 9};
         int[] dig5 = {9};
+        int[] dig6 = {9, 9};
+
 
         plusOne(dig1);
-        System.out.println();
         plusOne(dig2);
-        System.out.println();
         plusOne(dig3);
-        System.out.println();
         plusOne(dig4);
-        System.out.println();
         plusOne(dig5);
+        plusOne(dig6);
+
+        for(int i: dig1) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for(int i: dig2) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for(int i: dig3) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for(int i: dig4) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for(int i: dig5) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for(int i: dig6) {
+            System.out.print(i + " ");
+        }
     }
 }
